@@ -1,0 +1,13 @@
+﻿namespace Project.Entities.Models
+{
+    public class AppUserProfile : BaseEntity
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        //relational proporties
+        public virtual AppUser AppUser{get; set;}
+    }
+
+
+}

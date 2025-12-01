@@ -1,0 +1,5 @@
+1- conf Microsoft.EntityFrameworkCore.SqlServer
+
+2- dal Microsoft.EntityFrameworkCore.Tools ve Microsoft.EntityFrameworkCore.Proxies
+
+3- UI katmanina Microsoft.EntityFrameworkCore.Design 
