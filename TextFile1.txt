@@ -3,3 +3,12 @@
 2- dal Microsoft.EntityFrameworkCore.Tools ve Microsoft.EntityFrameworkCore.Proxies
 
 3- UI katmanina Microsoft.EntityFrameworkCore.Design 
+
+--------------------------
+
+Domain Entity: Data Access Logic (tamamen Crud mantigi, baska bir mantikla ilgilenmeyece)
+
+DTO(data transfer object): transfer edilen nesneler uzerinde yapilmasi gereken is mantigi (business logic) 
+							baska isle ilgilenmez
+
+ViewModel(RequestModel/ResponseModel) validation logic ile ilgilenen kavramlardir

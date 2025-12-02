@@ -15,6 +15,8 @@ namespace Project.WebApi
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDbContextService();
+            builder.Services.AddRepositoryService();
+            builder.Services.AddManagerService();
 
             var app = builder.Build();
 

@@ -12,6 +12,7 @@ namespace Project.Bll.DependencyResolvers
 {
     public static class DbContextResolver
     {
+        
         public static void AddDbContextService(this IServiceCollection services)
         { 
             ServiceProvider provider= services.BuildServiceProvider();
