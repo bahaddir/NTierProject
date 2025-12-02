@@ -1,4 +1,5 @@
-﻿using Project.Entities.Models;
+﻿using Project.Bll.Dtos;
+using Project.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.Bll.Managers.Abstracts
 {
-    public interface IManager<T> where T:BaseEntity
+    public interface IManager<T,U> where T:class,IDto where U:BaseEntity
     {
 
         //BL for queries
