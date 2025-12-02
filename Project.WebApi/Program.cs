@@ -1,4 +1,6 @@
 using Project.Bll.DependencyResolvers;
+using Project.WebApi.MapperResolvers;
+
 namespace Project.WebApi
 {
     public class Program
@@ -17,7 +19,8 @@ namespace Project.WebApi
             builder.Services.AddDbContextService();
             builder.Services.AddRepositoryService();
             builder.Services.AddManagerService();
-
+            builder.Services.AddDtoMapperService();
+            builder.Services.AddVmMapperService();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

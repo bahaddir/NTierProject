@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project.Dal\Project.Dal.csproj" />
+    <ProjectReference Include="..\Project.Dal\Project.Dal.csproj">
+		<!--<PrivateAssets>all</PrivateAssets>-->
+	</ProjectReference>
+		
   </ItemGroup>
 
 </Project>
