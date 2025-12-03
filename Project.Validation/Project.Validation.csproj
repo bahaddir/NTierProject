@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -11,24 +11,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project.WebApi\Project.WebApi.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Validators\CategoryValidators\" />
-    <Folder Include="Validators\ProductValidators\" />
-    <Folder Include="Validators\OrderValidators\" />
-    <Folder Include="Validators\OrderDetailValidators\" />
-    <Folder Include="Validators\AppUserValidators\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="RequestModels\AppUserRequestModels\UpdateAppUserRequestModel.cs" />
     <None Include="Validators\AppUserProfileValidators\UpdateAppUserProfileValidator.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentValidation" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.Bll\Project.Bll.csproj" />
   </ItemGroup>
 
 </Project>

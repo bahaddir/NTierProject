@@ -1,6 +1,6 @@
 using Project.Bll.DependencyResolvers;
-using Project.Validation.MapperResolvers;
-using FluentValidation;
+//ToDo: Fix VM Mapper later
+//using Project.WebApi.MapperResolvers;
 
 namespace Project.WebApi
 {
@@ -21,11 +21,9 @@ namespace Project.WebApi
             builder.Services.AddRepositoryService();
             builder.Services.AddManagerService();
             builder.Services.AddDtoMapperService();
-            builder.Services.AddVmMapperService();
+            //ToDo: Fix VM Mapper later
+            //builder.Services.AddVmMapperService();
 
-            builder.Services.AddFluentValidationAutoValidation();
-            builder.Services.AddFluentValidationClientsideAdapters();
-            builder.Services.AddValidatorService(); // Validator servisinin middleware'e eklenmesi
 
             var app = builder.Build();
 
