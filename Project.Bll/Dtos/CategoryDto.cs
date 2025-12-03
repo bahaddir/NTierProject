@@ -10,6 +10,7 @@ namespace Project.Bll.Dtos
     {
         public string CategoryName { get; set; }
         public string Description { get; set; }
+
     }
 
 
