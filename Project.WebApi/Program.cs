@@ -1,5 +1,6 @@
 using Project.Bll.DependencyResolvers;
-using Project.WebApi.MapperResolvers;
+using Project.Validation.MapperResolvers;
+using FluentValidation;
 
 namespace Project.WebApi
 {
@@ -21,6 +22,11 @@ namespace Project.WebApi
             builder.Services.AddManagerService();
             builder.Services.AddDtoMapperService();
             builder.Services.AddVmMapperService();
+
+            builder.Services.AddFluentValidationAutoValidation();
+            builder.Services.AddFluentValidationClientsideAdapters();
+            builder.Services.AddValidatorService(); // Validator servisinin middleware'e eklenmesi
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

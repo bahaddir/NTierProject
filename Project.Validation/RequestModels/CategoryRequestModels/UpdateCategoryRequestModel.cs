@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Project.WebApi.Models.RequestModels.Categories
+namespace Project.Validation.RequestModels.AppUserProfileRequestModels
 {
     public class UpdateCategoryRequestModel
     {
         public int Id { get; set; }
-
-        //[Required (ErrorMessage="bu alan bo gecilemez")]
-
         public string CategoryName { get; set; }
         public string Description { get; set; }
     }
+
 }

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RequestModels\AppUserProfileRequestModels\UpdateAppUserRequestModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Project.WebApi\Project.WebApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\CategoryValidators\" />
+    <Folder Include="Validators\ProductValidators\" />
+    <Folder Include="Validators\OrderValidators\" />
+    <Folder Include="Validators\OrderDetailValidators\" />
+    <Folder Include="Validators\AppUserValidators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="RequestModels\AppUserRequestModels\UpdateAppUserRequestModel.cs" />
+    <None Include="Validators\AppUserProfileValidators\UpdateAppUserProfileValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
